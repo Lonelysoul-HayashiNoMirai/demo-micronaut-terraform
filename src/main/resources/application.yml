@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: demo_micronaut_terraform
+  metrics:
+    enabled: true
+    export:
+      cloudwatch:
+        enabled: true

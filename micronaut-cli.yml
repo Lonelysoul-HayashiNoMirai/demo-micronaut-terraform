@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.phan_lam
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, aws-lambda, aws-v2-sdk, dynamodb, jackson-databind, java, java-application, junit, logback, lombok, management, maven, micrometer, micrometer-cloudwatch, readme, shade, x86, yaml]
