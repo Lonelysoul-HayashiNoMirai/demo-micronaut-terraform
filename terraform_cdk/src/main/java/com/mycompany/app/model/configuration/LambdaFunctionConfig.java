@@ -4,10 +4,17 @@
  */
 package com.mycompany.app.model.configuration;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 /**
  *
  * @author Phan Lam
  */
+@Data
+@AllArgsConstructor
 public class LambdaFunctionConfig {
-    
+    private String executablePath;
+    private String handlerPath;
+    private String runtime;
 }

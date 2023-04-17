@@ -13,7 +13,5 @@ public class MainStack extends TerraformStack
         AwsProvider.Builder.create (this, "AWS-provider")
                 .region ("us-west-2")
                 .build ();
-        
-       
     }
 }
