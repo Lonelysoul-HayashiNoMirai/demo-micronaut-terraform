@@ -4,7 +4,8 @@
  */
 package com.phan_lam.app.model.configuration;
 
-import lombok.AllArgsConstructor;
+import com.hashicorp.cdktf.providers.aws.api_gateway_rest_api.ApiGatewayRestApi;
+import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -12,9 +13,12 @@ import lombok.Data;
  * @author Phan Lam
  */
 @Data
-@AllArgsConstructor
+@Builder
 public class LambdaFunctionConfig {
     private String executablePath;
     private String handlerPath;
     private String runtime;
+    private final ApiGatewayRestApi restApi;
+    private String restResourcePathPart;
+    private String restMethod;
 }

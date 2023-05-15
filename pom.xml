@@ -15,8 +15,8 @@
 
   <properties>
     <packaging>jar</packaging>
-    <jdk.version>17</jdk.version>
-    <release.version>17</release.version>
+    <jdk.version>11</jdk.version>
+    <release.version>11</release.version>
     <micronaut.version>3.8.9</micronaut.version>
     <micronaut.runtime>lambda</micronaut.runtime>
     <exec.mainClass>com.phan_lam.Application</exec.mainClass>
@@ -161,5 +161,17 @@
       </plugin>
     </plugins>
   </build>
-
+  
+    <profiles>
+        <profile>
+            <id>local-run</id>
+            <dependencies>
+                <dependency>
+                    <groupId>io.micronaut</groupId>
+                    <artifactId>micronaut-http-server-netty</artifactId>
+                    <scope>compile</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
 </project>

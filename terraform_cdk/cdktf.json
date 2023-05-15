@@ -1,7 +1,7 @@
 {
   "language": "java",
   "app": "mvn -e -q compile exec:java",
-  "projectId": "43465840-b6e4-4872-a18c-45efe216736e",
+  "projectId": "b73551a5-7630-49ff-a4b5-b723048a8ea5",
   "sendCrashReports": "true",
   "codeMakerOutput": "src/main/java/imports",
   "terraformProviders": [],

@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mycompany.app</groupId>
+  <groupId>com.phan_lam.app</groupId>
   <artifactId>terraform_cdk</artifactId>
   <name>terraform_cdk</name>
   <version>0.1</version>
@@ -90,7 +90,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <mainClass>com.mycompany.app.Main</mainClass>
+          <mainClass>com.phan_lam.app.Main</mainClass>
         </configuration>
       </plugin>
 
