@@ -23,6 +23,7 @@ import com.hashicorp.cdktf.providers.aws.lambda_permission.LambdaPermission;
 import com.hashicorp.cdktf.providers.aws.s3_bucket.S3Bucket;
 import com.hashicorp.cdktf.providers.aws.s3_object.S3Object;
 import static com.phan_lam.app.ResourceConstant.LAMBDA_EXECUTABLE_BUCKET_NAME;
+import static com.phan_lam.app.ResourceConstant.LAMBDA_MEMORY_SIZE;
 import com.phan_lam.app.model.configuration.LambdaFunctionConfig;
 import java.util.ArrayList;
 import java.util.List;
@@ -123,6 +124,7 @@ public class CommonLambdaFunction extends Construct {
                 .sourceCodeHash (executable.getAssetHash ())
                 .handler (config.getHandlerPath ())
                 .runtime (config.getRuntime ())
+                .memorySize (LAMBDA_MEMORY_SIZE)
                 .role (executionRole.getArn ())
                 .build ();
         

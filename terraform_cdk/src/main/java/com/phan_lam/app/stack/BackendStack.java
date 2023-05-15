@@ -82,9 +82,9 @@ public class BackendStack extends TerraformStack {
         
         rootIntegration = ApiGatewayIntegration.Builder
                 .create (this, "api-gateway-integration")
-                .httpMethod (rootMethod.getHttpMethod ())
-                .resourceId (rootMethod.getResourceId ())
                 .restApiId (apiGatewayRestApi.getId ())
+                .resourceId (rootMethod.getResourceId ())
+                .httpMethod (rootMethod.getHttpMethod ())
                 .type ("AWS_PROXY")
                 .integrationHttpMethod ("POST")
                 .uri (
